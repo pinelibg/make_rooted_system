@@ -97,7 +97,7 @@ func_extract_factoryfs_files()
 	_FACTORYFS_IMG=$3
 	
 	# extract factoryfs files
-	echo ">>>>> extract system files. wait a few minuts..."
+	echo ">>>>> extract system files. wait a few minutes..."
 	if [ ! -d $_TMP_DIR/mnt ]; then
 		mkdir -p $_TMP_DIR/mnt
 	fi
