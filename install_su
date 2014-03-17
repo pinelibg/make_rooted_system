@@ -173,3 +173,16 @@ func_install_su_type6()
 
 }
 
+func_install_su_type-pine()
+{
+	_FACTORYFS_DIR=$1
+
+	sudo cp -av sed/type-pine/bin/prepare_param.sh $_FACTORYFS_DIR/bin/prepare_param.sh
+	sudo chown 0.0 $_FACTORYFS_DIR/bin/prepare_param.sh
+	sudo chmod 755 $_FACTORYFS_DIR/bin/prepare_param.sh
+
+	sudo cp -av sed/type-pine/etc/busybox_file $_FACTORYFS_DIR/etc/busybox_file
+	sudo chown 0.0 $_FACTORYFS_DIR/etc/busybox_file
+	sudo chmod 755 $_FACTORYFS_DIR/etc/busybox_file
+}
+
